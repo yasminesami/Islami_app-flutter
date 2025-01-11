@@ -9,14 +9,16 @@ class QuranScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Padding(
       padding: const EdgeInsets.only(top: 40.0, left: 16, right: 16),
       child: Column(
         children: [
           Image.asset(
             'assets/images/islami_header.png',
-            width: 291,
-            height: 171,
+            width: screenWidth * .8,
+            height: screenHeight * .2,
           ),
           TextFormField(
             style: TextStyle(color: AppColors.white),

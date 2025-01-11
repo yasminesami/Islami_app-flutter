@@ -5,6 +5,9 @@ import 'package:islami/features/onboarding/onboarding_screen.dart';
 import 'package:islami/features/quran/quran_details.dart';
 import 'package:islami/features/splash/splash_screen.dart';
 
+import 'features/hadith/hadith_details.dart';
+import 'features/hadith/hadith_screen.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -20,6 +23,8 @@ class MyApp extends StatelessWidget {
         OnboardingScreen.routeName: (context) => const OnboardingScreen(),
         HomeScreen.routeName: (context) => const HomeScreen(),
         QuranDetails.routeName: (context) => const QuranDetails(),
+        HadithScreen.routeName: (context) => HadithScreen(),
+        HadithDetails.routeName: (context) => const HadithDetails(),
       },
       darkTheme: AppThemeData.darkTheme,
       themeMode: ThemeMode.dark,

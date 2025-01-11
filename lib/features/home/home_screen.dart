@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/core/constants/app_colors.dart';
+import 'package:islami/features/hadith/hadith_screen.dart';
 import 'package:islami/features/quran/quran_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> pages = [
     QuranScreen(),
-    Center(child: Text('Sebha Screen', style: TextStyle(fontSize: 24))),
+    HadithScreen(),
     Center(child: Text('Radio Screen', style: TextStyle(fontSize: 24))),
     Center(child: Text('Time Screen', style: TextStyle(fontSize: 24))),
   ];
