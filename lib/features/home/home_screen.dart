@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami/core/constants/app_colors.dart';
 import 'package:islami/features/hadith/hadith_screen.dart';
 import 'package:islami/features/quran/quran_screen.dart';
+import 'package:islami/features/radio/radio_screen.dart';
 import 'package:islami/features/sebha/sebha_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,10 +18,13 @@ class _HomeScreenState extends State<HomeScreen> {
   int currentPage = 0;
 
   final List<Widget> pages = [
-    QuranScreen(),
-    HadithScreen(),
-    SebhaScreen(),
-    Center(child: Text('Time Screen', style: TextStyle(fontSize: 24))),
+    const QuranScreen(),
+    const HadithScreen(),
+    const SebhaScreen(),
+    const RadioScreen(),
+    const Center(
+      child: Text("time Screen"),
+    )
   ];
 
   final List<String> pagesBackground = [
