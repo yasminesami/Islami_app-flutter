@@ -3,6 +3,7 @@ import 'package:islami/core/themes/theme_data.dart';
 import 'package:islami/features/home/home_screen.dart';
 import 'package:islami/features/onboarding/onboarding_screen.dart';
 import 'package:islami/features/quran/quran_details.dart';
+import 'package:islami/features/radio/radio_screen.dart';
 import 'package:islami/features/splash/splash_screen.dart';
 
 import 'features/hadith/hadith_details.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: {
         SplashScreen.routeName: (context) => const SplashScreen(),
         OnboardingScreen.routeName: (context) => const OnboardingScreen(),
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         HadithScreen.routeName: (context) => const HadithScreen(),
         HadithDetails.routeName: (context) => const HadithDetails(),
         SebhaScreen.routeName: (context) => const SebhaScreen(),
+        RadioScreen.routeName: (context) => const RadioScreen(),
       },
       darkTheme: AppThemeData.darkTheme,
       themeMode: ThemeMode.dark,
